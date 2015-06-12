@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>四角悬浮</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+</head>
+    <body>
+    	<style>  
+body{position:relative;}    /*左上角*/  
+.Left_top {left:0;top:0;position:fixed;+position:absolute;top:expression(parseInt(document.body.scrollTop));}    /*右上角*/ 
+ .Right_top {right:0;top:0;position:fixed;+position:absolute;top:expression(parseInt(document.body.scrollTop));}    /*左下角*/ 
+ .Left_bot {left:0;bottom:0;position:fixed;+position:absolute;top:expression(parseInt(document.body.scrollTop)+document.body.clientHeight-75);}    /*右下角*/ 
+ .Right_bot {right:0;bottom:0;position:fixed;+position:absolute;top:expression(parseInt(document.body.scrollTop)+document.body.clientHeight-75);}  </style>  
+<div class="Left_top">
+<img src="http://www.baidu.com/img/logo-yy.gif"></div>
+  <div class="Right_top"><img src="http://www.baidu.com/img/logo-yy.gif"></div>
+  <div class="Left_bot"><img src="http://www.baidu.com/img/logo-yy.gif"></div> 
+ <div class="Right_bot"><img src="http://www.baidu.com/img/logo-yy.gif"></div> 
+ <div style="height:2000px"></div>
+    </body>
+</html>
